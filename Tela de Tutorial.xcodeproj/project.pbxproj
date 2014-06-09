@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		846147E119455D7D00A0E11C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846147E019455D7D00A0E11C /* AppDelegate.swift */; };
+		846147E319455D7D00A0E11C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846147E219455D7D00A0E11C /* Images.xcassets */; };
+		846147EF19455D7D00A0E11C /* Tela_de_TutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846147EE19455D7D00A0E11C /* Tela_de_TutorialTests.swift */; };
+		84614805194562A600A0E11C /* shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 846147FC194562A600A0E11C /* shadow@2x.png */; };
+		84614806194562A600A0E11C /* bg1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 846147FD194562A600A0E11C /* bg1@2x.png */; };
+		84614807194562A600A0E11C /* bg2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 846147FE194562A600A0E11C /* bg2@2x.png */; };
+		84614808194562A600A0E11C /* bg3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 846147FF194562A600A0E11C /* bg3@2x.png */; };
+		84614809194562A600A0E11C /* bg4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84614800194562A600A0E11C /* bg4@2x.png */; };
+		8461480A194562A600A0E11C /* icon1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84614801194562A600A0E11C /* icon1@2x.png */; };
+		8461480B194562A600A0E11C /* icon2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84614802194562A600A0E11C /* icon2@2x.png */; };
+		8461480C194562A600A0E11C /* icon3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84614803194562A600A0E11C /* icon3@2x.png */; };
+		8461480D194562A600A0E11C /* icon4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84614804194562A600A0E11C /* icon4@2x.png */; };
+		846148111945687000A0E11C /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461480F1945687000A0E11C /* TutorialViewController.swift */; };
+		846148121945687000A0E11C /* TutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846148101945687000A0E11C /* TutorialViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		846147E919455D7D00A0E11C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 846147D319455D7C00A0E11C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 846147DA19455D7D00A0E11C;
+			remoteInfo = "Tela de Tutorial";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		846147DB19455D7D00A0E11C /* Tela de Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tela de Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		846147DF19455D7D00A0E11C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846147E019455D7D00A0E11C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		846147E219455D7D00A0E11C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		846147E819455D7D00A0E11C /* Tela de TutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tela de TutorialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		846147ED19455D7D00A0E11C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846147EE19455D7D00A0E11C /* Tela_de_TutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela_de_TutorialTests.swift; sourceTree = "<group>"; };
+		846147FC194562A600A0E11C /* shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shadow@2x.png"; sourceTree = "<group>"; };
+		846147FD194562A600A0E11C /* bg1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg1@2x.png"; sourceTree = "<group>"; };
+		846147FE194562A600A0E11C /* bg2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg2@2x.png"; sourceTree = "<group>"; };
+		846147FF194562A600A0E11C /* bg3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg3@2x.png"; sourceTree = "<group>"; };
+		84614800194562A600A0E11C /* bg4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg4@2x.png"; sourceTree = "<group>"; };
+		84614801194562A600A0E11C /* icon1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon1@2x.png"; sourceTree = "<group>"; };
+		84614802194562A600A0E11C /* icon2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon2@2x.png"; sourceTree = "<group>"; };
+		84614803194562A600A0E11C /* icon3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon3@2x.png"; sourceTree = "<group>"; };
+		84614804194562A600A0E11C /* icon4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon4@2x.png"; sourceTree = "<group>"; };
+		8461480F1945687000A0E11C /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		846148101945687000A0E11C /* TutorialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		846147D819455D7D00A0E11C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		846147E519455D7D00A0E11C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		846147D219455D7C00A0E11C = {
+			isa = PBXGroup;
+			children = (
+				846147DD19455D7D00A0E11C /* Tela de Tutorial */,
+				846147EB19455D7D00A0E11C /* Tela de TutorialTests */,
+				846147DC19455D7D00A0E11C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		846147DC19455D7D00A0E11C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				846147DB19455D7D00A0E11C /* Tela de Tutorial.app */,
+				846147E819455D7D00A0E11C /* Tela de TutorialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		846147DD19455D7D00A0E11C /* Tela de Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				8461480E194562A900A0E11C /* Imagens */,
+				846147E019455D7D00A0E11C /* AppDelegate.swift */,
+				8461480F1945687000A0E11C /* TutorialViewController.swift */,
+				846148101945687000A0E11C /* TutorialViewController.xib */,
+				846147E219455D7D00A0E11C /* Images.xcassets */,
+				846147DE19455D7D00A0E11C /* Supporting Files */,
+			);
+			path = "Tela de Tutorial";
+			sourceTree = "<group>";
+		};
+		846147DE19455D7D00A0E11C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				846147DF19455D7D00A0E11C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		846147EB19455D7D00A0E11C /* Tela de TutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				846147EE19455D7D00A0E11C /* Tela_de_TutorialTests.swift */,
+				846147EC19455D7D00A0E11C /* Supporting Files */,
+			);
+			path = "Tela de TutorialTests";
+			sourceTree = "<group>";
+		};
+		846147EC19455D7D00A0E11C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				846147ED19455D7D00A0E11C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8461480E194562A900A0E11C /* Imagens */ = {
+			isa = PBXGroup;
+			children = (
+				846147FC194562A600A0E11C /* shadow@2x.png */,
+				846147FD194562A600A0E11C /* bg1@2x.png */,
+				846147FE194562A600A0E11C /* bg2@2x.png */,
+				846147FF194562A600A0E11C /* bg3@2x.png */,
+				84614800194562A600A0E11C /* bg4@2x.png */,
+				84614801194562A600A0E11C /* icon1@2x.png */,
+				84614802194562A600A0E11C /* icon2@2x.png */,
+				84614803194562A600A0E11C /* icon3@2x.png */,
+				84614804194562A600A0E11C /* icon4@2x.png */,
+			);
+			name = Imagens;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		846147DA19455D7D00A0E11C /* Tela de Tutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 846147F219455D7D00A0E11C /* Build configuration list for PBXNativeTarget "Tela de Tutorial" */;
+			buildPhases = (
+				846147D719455D7D00A0E11C /* Sources */,
+				846147D819455D7D00A0E11C /* Frameworks */,
+				846147D919455D7D00A0E11C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tela de Tutorial";
+			productName = "Tela de Tutorial";
+			productReference = 846147DB19455D7D00A0E11C /* Tela de Tutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		846147E719455D7D00A0E11C /* Tela de TutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 846147F519455D7D00A0E11C /* Build configuration list for PBXNativeTarget "Tela de TutorialTests" */;
+			buildPhases = (
+				846147E419455D7D00A0E11C /* Sources */,
+				846147E519455D7D00A0E11C /* Frameworks */,
+				846147E619455D7D00A0E11C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				846147EA19455D7D00A0E11C /* PBXTargetDependency */,
+			);
+			name = "Tela de TutorialTests";
+			productName = "Tela de TutorialTests";
+			productReference = 846147E819455D7D00A0E11C /* Tela de TutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		846147D319455D7C00A0E11C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Hélcio Franco";
+				TargetAttributes = {
+					846147DA19455D7D00A0E11C = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					846147E719455D7D00A0E11C = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 846147DA19455D7D00A0E11C;
+					};
+				};
+			};
+			buildConfigurationList = 846147D619455D7C00A0E11C /* Build configuration list for PBXProject "Tela de Tutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 846147D219455D7C00A0E11C;
+			productRefGroup = 846147DC19455D7D00A0E11C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				846147DA19455D7D00A0E11C /* Tela de Tutorial */,
+				846147E719455D7D00A0E11C /* Tela de TutorialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		846147D919455D7D00A0E11C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8461480B194562A600A0E11C /* icon2@2x.png in Resources */,
+				8461480C194562A600A0E11C /* icon3@2x.png in Resources */,
+				846148121945687000A0E11C /* TutorialViewController.xib in Resources */,
+				84614806194562A600A0E11C /* bg1@2x.png in Resources */,
+				84614809194562A600A0E11C /* bg4@2x.png in Resources */,
+				84614808194562A600A0E11C /* bg3@2x.png in Resources */,
+				846147E319455D7D00A0E11C /* Images.xcassets in Resources */,
+				84614807194562A600A0E11C /* bg2@2x.png in Resources */,
+				8461480D194562A600A0E11C /* icon4@2x.png in Resources */,
+				84614805194562A600A0E11C /* shadow@2x.png in Resources */,
+				8461480A194562A600A0E11C /* icon1@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		846147E619455D7D00A0E11C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		846147D719455D7D00A0E11C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846148111945687000A0E11C /* TutorialViewController.swift in Sources */,
+				846147E119455D7D00A0E11C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		846147E419455D7D00A0E11C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846147EF19455D7D00A0E11C /* Tela_de_TutorialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		846147EA19455D7D00A0E11C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 846147DA19455D7D00A0E11C /* Tela de Tutorial */;
+			targetProxy = 846147E919455D7D00A0E11C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		846147F019455D7D00A0E11C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		846147F119455D7D00A0E11C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		846147F319455D7D00A0E11C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Tela de Tutorial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		846147F419455D7D00A0E11C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Tela de Tutorial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		846147F619455D7D00A0E11C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tela de Tutorial.app/Tela de Tutorial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tela de TutorialTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		846147F719455D7D00A0E11C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tela de Tutorial.app/Tela de Tutorial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tela de TutorialTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		846147D619455D7C00A0E11C /* Build configuration list for PBXProject "Tela de Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846147F019455D7D00A0E11C /* Debug */,
+				846147F119455D7D00A0E11C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		846147F219455D7D00A0E11C /* Build configuration list for PBXNativeTarget "Tela de Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846147F319455D7D00A0E11C /* Debug */,
+				846147F419455D7D00A0E11C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		846147F519455D7D00A0E11C /* Build configuration list for PBXNativeTarget "Tela de TutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846147F619455D7D00A0E11C /* Debug */,
+				846147F719455D7D00A0E11C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 846147D319455D7C00A0E11C /* Project object */;
+}
