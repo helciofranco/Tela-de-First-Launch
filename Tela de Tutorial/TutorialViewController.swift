@@ -11,17 +11,29 @@ import UIKit
 class TutorialViewController: UIViewController, UIScrollViewDelegate {
 
     // UIScrollView
-    @IBOutlet var scrollView : UIScrollView = nil
+    @IBOutlet var scrollView: UIScrollView = nil
     
     // UIPageControl
-    @IBOutlet var pageControl : UIPageControl = nil
+    @IBOutlet var pageControl: UIPageControl = nil
     
     // UIImageViews para realizar a transição suave
     var fundoAtual : UIImageView = UIImageView()
     var fundoTransicao : UIImageView = UIImageView()
     
+    // Botão "pular tutorial"
+    let pularTutorialLabel: String = "Pular"
+    
+    // Botão "finalizar tutorial"
+    let finalizarTutorialLabel: String = "Pronto"
+    
+    // Distância do ícone no eixo y
+    let distanciaIconeY: Float = 45.0
+    
     // Nome dos Fundos - Coloque aqui o nome das imagens que você importou para o fundo
-    let fundos = ["bg1.png", "bg2.png", "bg3.png", "bg4.png"]
+    let fundos: String[] = ["bg1.png", "bg2.png", "bg3.png", "bg4.png"]
+    
+    // Informações das páginas
+    let paginas: (String, String, String)[] = [("icon1.png", "Título 1", "Descrição"), ("icon2.png", "Título 1", "Descrição"), ("icon3.png", "Título 1", "Descrição"), ("icon4.png", "Título 1", "Descrição")]
     
     // Página atual
     var paginaAtual = -1
@@ -48,9 +60,10 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         // Configura tamanho do conteúdo da UIScrollView
         scrollView!.delegate = self
         scrollView!.contentSize = CGSizeMake(larguraTutorial, CGRectGetHeight(self.view.bounds))
+        self.view.bringSubviewToFront(scrollView!)
         
-        // Fundo preto na scroll view
-        scrollView!.backgroundColor = UIColor.blackColor()
+        // Fundo preto na tela
+        self.view.backgroundColor = UIColor.blackColor()
         
         // Determina o número de páginas na UIPageControl
         pageControl!.numberOfPages = fundos.count
@@ -58,6 +71,22 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         
         // Apresenta o primeiro fundo
         trocarFundo()
+        
+        // Popula ScrollView com as informação da Tupla "paginas"
+        popularScrollView()
+    }
+    
+    func popularScrollView() {
+        // Percorre todas tuplas
+        for (paginaNumero, (icone, titulo, descricao)) in enumerate(paginas) {
+            // Coloca o ícone na tela
+            let iconeImage = UIImage(named: icone)
+            let iconeView = UIImageView(frame: CGRect(x: (CGRectGetWidth(self.view.bounds) * Float(paginaNumero)) + (CGRectGetWidth(self.view.bounds) - iconeImage.size.width) / 2, y: distanciaIconeY, width: iconeImage.size.width, height: iconeImage.size.height))
+            iconeView.image = iconeImage
+            scrollView!.addSubview(iconeView)
+            
+            println(titulo)
+        }
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView!) {
