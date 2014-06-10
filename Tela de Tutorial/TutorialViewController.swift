@@ -20,6 +20,10 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     var fundoAtual : UIImageView = UIImageView()
     var fundoTransicao : UIImageView = UIImageView()
     
+    // Fonte título e fonte da descrição
+    let fonteTitulo = UIFont(name: "Myriad Pro", size: 60.0)
+    let fonteTexto = UIFont(name: "Myriad Pro", size: 20.0)
+    
     // Botão "pular tutorial"
     let pularTutorialLabel: String = "Pular"
     
@@ -29,8 +33,7 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     // Distância do ícone no eixo y
     let distanciaIconeY: Float = 45.0
     
-    // Distância do título no eixo y e fonte
-    let fonteTitulo = UIFont(name: "Myriad Pro", size: 60.0)
+    // Distância do título no eixo y
     let distanciaTituloY: Float = 155.0
     
     // Nome dos Fundos - Coloque aqui o nome das imagens que você importou para o fundo
@@ -100,6 +103,14 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
             tituloLabel.textColor = UIColor.whiteColor()
             scrollView!.addSubview(tituloLabel)
             
+            // Coloca a descrição na tela
+            let descricaoLabel = UILabel(frame: CGRect(x: origemPagina + 30, y: distanciaTituloY, width: CGRectGetWidth(self.view.bounds) - 60, height: 300))
+            descricaoLabel.text = descricao
+            descricaoLabel.textAlignment = .Center
+            descricaoLabel.font = fonteTexto
+            descricaoLabel.numberOfLines = 5
+            descricaoLabel.textColor = UIColor.whiteColor()
+            scrollView!.addSubview(descricaoLabel)
         }
     }
     
