@@ -21,6 +21,7 @@
 		8461480D194562A600A0E11C /* icon4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84614804194562A600A0E11C /* icon4@2x.png */; };
 		846148111945687000A0E11C /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461480F1945687000A0E11C /* TutorialViewController.swift */; };
 		846148121945687000A0E11C /* TutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846148101945687000A0E11C /* TutorialViewController.xib */; };
+		84B65AF819474A24003BFB95 /* MyriadPro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84B65AF6194749F7003BFB95 /* MyriadPro.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		84614804194562A600A0E11C /* icon4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon4@2x.png"; sourceTree = "<group>"; };
 		8461480F1945687000A0E11C /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		846148101945687000A0E11C /* TutorialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialViewController.xib; sourceTree = "<group>"; };
+		84B65AF6194749F7003BFB95 /* MyriadPro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyriadPro.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		846147DD19455D7D00A0E11C /* Tela de Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				84B65AF7194749FB003BFB95 /* Fontes */,
 				8461480E194562A900A0E11C /* Imagens */,
 				846147E019455D7D00A0E11C /* AppDelegate.swift */,
 				8461480F1945687000A0E11C /* TutorialViewController.swift */,
@@ -142,6 +145,14 @@
 				84614804194562A600A0E11C /* icon4@2x.png */,
 			);
 			name = Imagens;
+			sourceTree = "<group>";
+		};
+		84B65AF7194749FB003BFB95 /* Fontes */ = {
+			isa = PBXGroup;
+			children = (
+				84B65AF6194749F7003BFB95 /* MyriadPro.otf */,
+			);
+			name = Fontes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B65AF819474A24003BFB95 /* MyriadPro.otf in Resources */,
 				8461480B194562A600A0E11C /* icon2@2x.png in Resources */,
 				8461480C194562A600A0E11C /* icon3@2x.png in Resources */,
 				846148121945687000A0E11C /* TutorialViewController.xib in Resources */,
@@ -429,6 +441,7 @@
 				846147F419455D7D00A0E11C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		846147F519455D7D00A0E11C /* Build configuration list for PBXNativeTarget "Tela de TutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +450,7 @@
 				846147F719455D7D00A0E11C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

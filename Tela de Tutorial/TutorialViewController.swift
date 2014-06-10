@@ -29,6 +29,10 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     // Distância do ícone no eixo y
     let distanciaIconeY: Float = 45.0
     
+    // Distância do título no eixo y e fonte
+    let fonteTitulo = UIFont(name: "Myriad Pro", size: 60.0)
+    let distanciaTituloY: Float = 155.0
+    
     // Nome dos Fundos - Coloque aqui o nome das imagens que você importou para o fundo
     let fundos: String[] = ["bg1.png", "bg2.png", "bg3.png", "bg4.png"]
     
@@ -79,13 +83,23 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     func popularScrollView() {
         // Percorre todas tuplas
         for (paginaNumero, (icone, titulo, descricao)) in enumerate(paginas) {
+            // Início da página no eixo X
+            let origemPagina = (CGRectGetWidth(self.view.bounds) * Float(paginaNumero))
+            
             // Coloca o ícone na tela
             let iconeImage = UIImage(named: icone)
-            let iconeView = UIImageView(frame: CGRect(x: (CGRectGetWidth(self.view.bounds) * Float(paginaNumero)) + (CGRectGetWidth(self.view.bounds) - iconeImage.size.width) / 2, y: distanciaIconeY, width: iconeImage.size.width, height: iconeImage.size.height))
+            let iconeView = UIImageView(frame: CGRect(x: origemPagina + (CGRectGetWidth(self.view.bounds) - iconeImage.size.width) / 2, y: distanciaIconeY, width: iconeImage.size.width, height: iconeImage.size.height))
             iconeView.image = iconeImage
             scrollView!.addSubview(iconeView)
             
-            println(titulo)
+            // Coloca o título na tela
+            let tituloLabel = UILabel(frame: CGRect(x: origemPagina, y: distanciaTituloY, width: CGRectGetWidth(self.view.bounds), height: 70))
+            tituloLabel.text = titulo
+            tituloLabel.textAlignment = .Center
+            tituloLabel.font = fonteTitulo
+            tituloLabel.textColor = UIColor.whiteColor()
+            scrollView!.addSubview(tituloLabel)
+            
         }
     }
     
