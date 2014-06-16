@@ -20,16 +20,16 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     var fundoAtual : UIImageView = UIImageView()
     var fundoTransicao : UIImageView = UIImageView()
     
-    // Fonte título e fonte da descrição
+    // Fonte título, fonte da descrição e fonte do botão
     let fonteTitulo = UIFont(name: "Myriad Pro", size: 60.0)
     let fonteTexto = UIFont(name: "Myriad Pro", size: 20.0)
+    let fonteBotao = UIFont(name: "Myriad Pro", size: 25.0)
     
-    // Botão "pular tutorial"
-    var botaoPular : UIButton?
+    // Botão "finalizar/pular tutorial"
+    var botaoPular : UIButton = UIButton()
+
+    // Título do botão "finalizar/pular tutorial"
     let pularTutorialLabel: String = "Pular"
-    
-    // Botão "finalizar tutorial"
-    var botaoPronto : UIButton?
     let finalizarTutorialLabel: String = "Pronto"
     
     // Distância do ícone no eixo y
@@ -90,6 +90,12 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         
         // Insere botão "Pular"
         botaoPular = UIButton(frame: CGRect(x: (CGRectGetWidth(self.view.bounds) - 120) / 2, y: CGRectGetHeight(self.view.bounds) - 100, width: 120, height: 55))
+        botaoPular.font = fonteBotao
+        botaoPular.layer.borderColor = UIColor.whiteColor().CGColor
+        botaoPular.layer.borderWidth = 2.0
+        botaoPular.layer.cornerRadius = 28.0
+        botaoPular.setTitle(pularTutorialLabel, forState: .Normal)
+        botaoPular.addTarget(self, action: "pressed:", forControlEvents: .TouchUpInside)
         self.view.addSubview(botaoPular)
         
         // Insere botão "Pronto"
@@ -128,7 +134,17 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView!) {
+        // Troca o fundo
         trocarFundo()
+        
+        // Acessou última tela do tutorial
+        if pageControl.currentPage == pageControl.numberOfPages - 1 {
+            UIView.animateWithDuration(0.25, animations: { () -> () in self.botaoPular.alpha = 0.0 })
+            self.botaoPular.setTitle(self.finalizarTutorialLabel, forState: .Normal)
+            UIView.animateWithDuration(0.25, animations: { () -> () in self.botaoPular.alpha = 1.0 })
+        } else { // Não acessou a última tela
+            self.botaoPular.setTitle(self.pularTutorialLabel, forState: .Normal)
+        }
     }
     
     func trocarFundo() {
