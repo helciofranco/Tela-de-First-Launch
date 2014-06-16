@@ -187,7 +187,13 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func acabarTutorial(sender: UIButton!) {
-        println("salvar booleano que já viu o tutorial e mandar pro app...")
+        // Define que o usuário já visualizou o tutorial
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        userDefaults.setBool(true, forKey:"abriuApp")
+        
+        // Envia o usuário pro aplicativo
+        let minhaAppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        minhaAppDelegate.abrirAplicativo()
     }
     
     func minimo(numero1: Float, numero2: Float) -> Float {

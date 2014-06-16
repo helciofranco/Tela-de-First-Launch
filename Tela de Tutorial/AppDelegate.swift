@@ -12,11 +12,28 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
                             
     var window: UIWindow?
-
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
+        // Verifica se o aplicativo já foi aberto
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        if(userDefaults.objectForKey("abriuApp")) {
+            abrirAplicativo()
+        } else {
+            abrirTutorial()
+        }
+        
+        self.window!.backgroundColor = UIColor.whiteColor()
+        self.window!.makeKeyAndVisible()
+        return true
+    }
+    
+    func abrirAplicativo() {
+        println("Hora de instanciar sua viewcontroller principal e colocá-la como rootViewController.")
+    }
+    
+    func abrirTutorial() {
         // Nome dos Fundos - Coloque aqui o nome das imagens que você importou para o fundo
         let fundosArray: String[] = ["bg1.png", "bg2.png", "bg3.png", "bg4.png"]
         
@@ -31,14 +48,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Define minha tela de tutorial como a Root View Controller da aplicação
         let telaTutorial: TutorialViewController = TutorialViewController(fundos: fundosArray, paginas: paginasArray)
         self.window!.rootViewController = telaTutorial
-
-        /*
-        -- detectar se a aplicação já foi utilizada alguma vez utilizando o NSUserDefaults booleano. :)
-        */
-        
-        self.window!.backgroundColor = UIColor.whiteColor()
-        self.window!.makeKeyAndVisible()
-        return true
     }
 
     func applicationWillResignActive(application: UIApplication) {
