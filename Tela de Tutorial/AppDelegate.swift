@@ -31,6 +31,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Define minha tela de tutorial como a Root View Controller da aplicação
         let telaTutorial: TutorialViewController = TutorialViewController(fundos: fundosArray, paginas: paginasArray)
         self.window!.rootViewController = telaTutorial
+
+        /*
+        -- detectar se a aplicação já foi utilizada alguma vez utilizando o NSUserDefaults booleano. :)
+        */
         
         self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()

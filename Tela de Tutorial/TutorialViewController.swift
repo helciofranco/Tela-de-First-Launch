@@ -95,7 +95,7 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         botaoPular.layer.borderWidth = 2.0
         botaoPular.layer.cornerRadius = 28.0
         botaoPular.setTitle(pularTutorialLabel, forState: .Normal)
-        botaoPular.addTarget(self, action: "pressed:", forControlEvents: .TouchUpInside)
+        botaoPular.addTarget(self, action: "acabarTutorial:", forControlEvents: .TouchUpInside)
         self.view.addSubview(botaoPular)
         
         // Insere botão "Pronto"
@@ -184,6 +184,10 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
             fundoAtual.alpha = 1
             fundoTransicao.alpha = 0
         }
+    }
+    
+    func acabarTutorial(sender: UIButton!) {
+        println("salvar booleano que já viu o tutorial e mandar pro app...")
     }
     
     func minimo(numero1: Float, numero2: Float) -> Float {
