@@ -25,9 +25,11 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     let fonteTexto = UIFont(name: "Myriad Pro", size: 20.0)
     
     // Botão "pular tutorial"
+    var botaoPular : UIButton?
     let pularTutorialLabel: String = "Pular"
     
     // Botão "finalizar tutorial"
+    var botaoPronto : UIButton?
     let finalizarTutorialLabel: String = "Pronto"
     
     // Distância do ícone no eixo y
@@ -37,16 +39,20 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     let distanciaTituloY: Float = 155.0
     
     // Nome dos Fundos - Coloque aqui o nome das imagens que você importou para o fundo
-    let fundos: String[] = ["bg1.png", "bg2.png", "bg3.png", "bg4.png"]
+    let fundos: String[]
     
     // Informações das páginas
-    let paginas: (String, String, String)[] = [("icon1.png", "Título 1", "Descrição"), ("icon2.png", "Título 1", "Descrição"), ("icon3.png", "Título 1", "Descrição"), ("icon4.png", "Título 1", "Descrição")]
+    let paginas: (String, String, String)[]
     
     // Página atual
     var paginaAtual = -1
     
-    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    init(fundos ImagensFundo: String[], paginas PaginasTutorial: (String, String, String)[]) {
+        // Atribui os parâmetros que recebeu através do init
+        fundos = ImagensFundo
+        paginas = PaginasTutorial
+
+        super.init(nibName: "TutorialViewController", bundle: nil)
     }
 
     override func viewDidLoad() {
@@ -81,6 +87,13 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         
         // Popula ScrollView com as informação da Tupla "paginas"
         popularScrollView()
+        
+        // Insere botão "Pular"
+        botaoPular = UIButton(frame: CGRect(x: (CGRectGetWidth(self.view.bounds) - 120) / 2, y: CGRectGetHeight(self.view.bounds) - 100, width: 120, height: 55))
+        self.view.addSubview(botaoPular)
+        
+        // Insere botão "Pronto"
+    
     }
     
     func popularScrollView() {

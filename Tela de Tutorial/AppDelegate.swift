@@ -17,8 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
+        // Nome dos Fundos - Coloque aqui o nome das imagens que você importou para o fundo
+        let fundosArray: String[] = ["bg1.png", "bg2.png", "bg3.png", "bg4.png"]
+        
+        // Informações das páginas
+        let paginasArray: (String, String, String)[] = [
+            ("icon1.png", "Dinheiro", "Aqui você explica sobre essa função do seu aplicativo e algumas coisas a mais.\n Seja legal."),
+            ("icon2.png", "Mapas", "Aqui você explica sobre essa função do seu aplicativo e algumas coisas a mais.\n Seja legal."),
+            ("icon3.png", "Tesouro", "Aqui você explica sobre essa função do seu aplicativo e algumas coisas a mais.\n Seja legal."),
+            ("icon4.png", "Mundo", "Aqui você explica sobre essa função do seu aplicativo e algumas coisas a mais.\n Seja legal.")
+        ]
+        
         // Define minha tela de tutorial como a Root View Controller da aplicação
-        let telaTutorial: TutorialViewController = TutorialViewController(nibName: "TutorialViewController", bundle: nil)
+        let telaTutorial: TutorialViewController = TutorialViewController(fundos: fundosArray, paginas: paginasArray)
         self.window!.rootViewController = telaTutorial
         
         self.window!.backgroundColor = UIColor.whiteColor()
