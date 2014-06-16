@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5163D0BF194F6BFB00112B97 /* TelaPrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5163D0BD194F6BFB00112B97 /* TelaPrincipalViewController.swift */; };
+		5163D0C0194F6BFB00112B97 /* TelaPrincipalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5163D0BE194F6BFB00112B97 /* TelaPrincipalViewController.xib */; };
 		846147E119455D7D00A0E11C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846147E019455D7D00A0E11C /* AppDelegate.swift */; };
 		846147E319455D7D00A0E11C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846147E219455D7D00A0E11C /* Images.xcassets */; };
 		846147EF19455D7D00A0E11C /* Tela_de_TutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846147EE19455D7D00A0E11C /* Tela_de_TutorialTests.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5163D0BD194F6BFB00112B97 /* TelaPrincipalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelaPrincipalViewController.swift; sourceTree = "<group>"; };
+		5163D0BE194F6BFB00112B97 /* TelaPrincipalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TelaPrincipalViewController.xib; sourceTree = "<group>"; };
 		846147DB19455D7D00A0E11C /* Tela de Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tela de Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		846147DF19455D7D00A0E11C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846147E019455D7D00A0E11C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 				84B65AF7194749FB003BFB95 /* Fontes */,
 				8461480E194562A900A0E11C /* Imagens */,
 				846147E019455D7D00A0E11C /* AppDelegate.swift */,
+				5163D0BD194F6BFB00112B97 /* TelaPrincipalViewController.swift */,
+				5163D0BE194F6BFB00112B97 /* TelaPrincipalViewController.xib */,
 				8461480F1945687000A0E11C /* TutorialViewController.swift */,
 				846148101945687000A0E11C /* TutorialViewController.xib */,
 				846147E219455D7D00A0E11C /* Images.xcassets */,
@@ -244,6 +250,7 @@
 				846147E319455D7D00A0E11C /* Images.xcassets in Resources */,
 				84614807194562A600A0E11C /* bg2@2x.png in Resources */,
 				8461480D194562A600A0E11C /* icon4@2x.png in Resources */,
+				5163D0C0194F6BFB00112B97 /* TelaPrincipalViewController.xib in Resources */,
 				84614805194562A600A0E11C /* shadow@2x.png in Resources */,
 				8461480A194562A600A0E11C /* icon1@2x.png in Resources */,
 			);
@@ -263,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5163D0BF194F6BFB00112B97 /* TelaPrincipalViewController.swift in Sources */,
 				846148111945687000A0E11C /* TutorialViewController.swift in Sources */,
 				846147E119455D7D00A0E11C /* AppDelegate.swift in Sources */,
 			);

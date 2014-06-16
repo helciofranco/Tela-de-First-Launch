@@ -30,7 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func abrirAplicativo() {
-        println("Hora de instanciar sua viewcontroller principal e colocá-la como rootViewController.")
+        // Tela principal exemplo
+        let telaPrincipal = TelaPrincipalViewController(nibName: "TelaPrincipalViewController", bundle: nil)
+        self.window!.rootViewController = telaPrincipal
     }
     
     func abrirTutorial() {
